@@ -5,6 +5,8 @@ estructuras, aquel comportamiento se logra con un diagrama de iteración.
 Dicho diagrama necesita elementos de entrada como:
 
     longitud x,longitud y,Numero de varillas x,Numero de varillas y,f'c,B,Fy
+![](/imagenes/diagrama.PNG)
+
 
 ## **Plan de trabajo** 
 1. Inspección superficial de valores de la base de datos
