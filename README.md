@@ -195,10 +195,10 @@ Graficamos los resultados.
     for graafica in graaficas:
         df_final[graafica].plot(figsize=(15,5), title =graafica[0])
 
-![](/imagenes/out1.PNG)
+![](/imagenes/out1.png)
 
-![](/imagenes/out2.PNG)
+![](/imagenes/out2.png)
 
-![](/imagenes/out3.PNG)
+![](/imagenes/out3.png)
 
-![](/imagenes/out4.PNG)
+![](/imagenes/out4.png)
