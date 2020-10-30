@@ -43,7 +43,7 @@ Se observa que es una base de datos **pequeña** con ningun valor nulo que corre
     * Las variables de salida dependientes poseen un aceptable distribución normalizada. Y_cp y Y_fb
     * La Variable de salida dependiente X_fb posee un valor outlier que dista mucho de la distribución se procederá a eliminar o corregir dependiendo de sus variables  independientes.
     * La variable dependiente X, muestra un comportamiento próxima a una distribución uniforme.
-![](/imagenes/histograma1.PNG)
+![](/imagenes/histograma1.png)
 
 ## 2.2. Corrección de errores
 #### Eliminando las columnas invariantes
@@ -60,11 +60,11 @@ feature_columns = ['long_x', 'long_y', 'fc']<br>
 target_columns  = ['Y_cp', 'X_fb', 'Y_fb', 'X']
 
 #### Mostrando histogramas con las correcciones
-![](/imagenes/histograma2.PNG)
+![](/imagenes/histograma2.png)
 
 #### También graficaremos la representación de la característica "fc" dentro de la base de datos.
-![](/imagenes/histograma3.PNG)
-![](/imagenes/histograma4.PNG)
+![](/imagenes/histograma3.png)
+![](/imagenes/histograma4.png)
 
 ## 2.3. Matrices de correlación
 Analizaremos la relación entre las características y cada salida objetivo.
@@ -84,10 +84,10 @@ for output in target_columns:<br>
 . . . corr_df = df_study_n[columns_cm].corr(method='pearson') <br>
 . . . matrix = np.triu(corr_df)<br>
 . . . hmap=sns.heatmap(corr_df,annot=True, ax=ax, mask=matrix, vmin=-.8,vmax=.8,center=0)<br>
-![](/imagenes/corr1_ycp.PNG)
-![](/imagenes/corr1_xfb.PNG)
-![](/imagenes/corr1_yfb.PNG)
-![](/imagenes/corr1_x.PNG)
+![](/imagenes/corr1_ycp.png)
+![](/imagenes/corr1_xfb.png)
+![](/imagenes/corr1_yfb.png)
+![](/imagenes/corr1_x.png)
 
 # 3. Ingeniería de Caracteristicas
 * Se aumentarán las caracteristicas, generanfo una interaccion entre x y Y, 
@@ -125,10 +125,10 @@ Se observan fuertes correlaciones entre:
     * long_y
     * xy2
 
-![](/imagenes/corr2_ycp.PNG)
-![](/imagenes/corr2_xfb.PNG)
-![](/imagenes/corr2_yfb.PNG)
-![](/imagenes/corr2_x.PNG)
+![](/imagenes/corr2_ycp.png)
+![](/imagenes/corr2_xfb.png)
+![](/imagenes/corr2_yfb.png)
+![](/imagenes/corr2_x.png)
 
 # 4. Preprocesamiento de datos
 * Generando marcadores de estratificación para el split de los datos, con la finalidad
